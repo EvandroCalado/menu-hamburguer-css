@@ -53,10 +53,6 @@ main {
   transition: transform 500ms ease;
 }
 
-.menu .menu-faketrigger:checked ~ .menu-lines span {
-  background-color: #232323;
-}
-
 .menu .menu-faketrigger:checked ~ .menu-lines span:nth-child(1) {
   transform: translateY(15px) rotate(45deg);
 }
@@ -74,12 +70,13 @@ main {
   z-index: 998;
   left: 0;
   top: 0;
-  width: 300px;
-  height: 50vh;
+  width: 250px;
+  height: 30vh;
   padding-top: 100px;
-  background-color: #ededed;
+  background-color: black;
   transform: translateX(-300px);
   transition: transform 500ms ease;
+  border-radius: 0 30%;
 }
 
 .menu .menu-faketrigger:checked ~ ul {
@@ -92,7 +89,7 @@ main {
 
 .menu ul li a {
   text-decoration: none;
-  color: black;
+  color: #cdcdcd;
   font-size: 22px;
   transition: all ease 300ms;
 }
