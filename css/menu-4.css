@@ -1,0 +1,76 @@
+.menu-4 .menu {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.menu-4 .menu .menu-faketrigger {
+  position: absolute;
+  z-index: 1000;
+  width: 35px;
+  height: 35px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.menu-4 .menu .menu-lines {
+  position: absolute;
+  z-index: 999;
+  width: 35px;
+  height: 35px;
+}
+
+.menu-4 .menu .menu-lines span {
+  display: block;
+  width: 35px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: #cdcdcd;
+  border-radius: 3px;
+  transition: 500ms ease;
+}
+
+.menu-4 .menu .menu-faketrigger:checked ~ .menu-lines span:nth-child(1) {
+  transform: translateX(-3px) translateY(8px) rotate(-225deg);
+  width: 25px;
+}
+
+.menu-4 .menu .menu-faketrigger:checked ~ .menu-lines span:nth-child(2) {
+}
+
+.menu-4 .menu .menu-faketrigger:checked ~ .menu-lines span:nth-child(3) {
+  transform: translateX(-3px) translateY(-8px) rotate(225deg);
+  width: 25px;
+}
+
+.menu-4 .menu ul {
+  position: absolute;
+  z-index: 998;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 30vh;
+  padding-top: 100px;
+  background-color: black;
+  transform: translateX(-300px);
+  transition: transform 500ms ease;
+  border-radius: 0 30%;
+}
+
+.menu-4 .menu .menu-faketrigger:checked ~ ul {
+  transform: translateX(0);
+}
+
+.menu-4 .menu ul li {
+  padding: 10px 30px;
+}
+
+.menu-4 .menu ul li a {
+  text-decoration: none;
+  color: #cdcdcd;
+  font-size: 22px;
+  transition: all ease 300ms;
+}
+
+.menu-4 .menu ul li a:hover {
+  color: #999;
+}
